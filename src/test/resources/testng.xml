@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ArtNow Tests" parallel="tests" thread-count="4">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.EmbroideryExistenceTest"/>
+            <class name="tests.EmbroideryStyleTest"/>
+<!--            <class name="tests.BatikTests"/>-->
+<!--            <class name="tests.SearchTests"/>-->
+<!--            <class name="tests.JewelryTests"/>-->
+        </classes>
+    </test>
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.EmbroideryExistenceTest"/>
+            <class name="tests.EmbroideryStyleTest"/>
+<!--            <class name="tests.BatikTests"/>-->
+<!--            <class name="tests.SearchTests"/>-->
+<!--            <class name="tests.JewelryTests"/>-->
+        </classes>
+    </test>
+</suite>
