@@ -14,4 +14,9 @@ public class PaintingPage {
         Assert.assertEquals(driver.findElement(By.xpath("//span[@class='grey' and contains(text(), 'Стиль:')]/following-sibling::a")).getText(), style);
 
     }
+
+    public boolean doKeywordsContainQuery(String query) {
+        String keywords = driver.findElement(By.xpath("//div[@class='txt-p lft grey']")).getText();
+        return keywords.contains(query);
+    }
 }

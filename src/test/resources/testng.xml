@@ -5,9 +5,9 @@
         <classes>
             <class name="tests.EmbroideryExistenceTest"/>
             <class name="tests.EmbroideryStyleTest"/>
-<!--            <class name="tests.BatikTests"/>-->
-<!--            <class name="tests.SearchTests"/>-->
-<!--            <class name="tests.JewelryTests"/>-->
+            <class name="tests.FavoritesTest"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.CartTest"/>
         </classes>
     </test>
     <test name="Firefox Tests">
@@ -15,9 +15,9 @@
         <classes>
             <class name="tests.EmbroideryExistenceTest"/>
             <class name="tests.EmbroideryStyleTest"/>
-<!--            <class name="tests.BatikTests"/>-->
-<!--            <class name="tests.SearchTests"/>-->
-<!--            <class name="tests.JewelryTests"/>-->
+            <class name="tests.FavoritesTest"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.CartTest"/>
         </classes>
     </test>
 </suite>
