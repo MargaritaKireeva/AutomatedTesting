@@ -7,6 +7,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class DriverManager {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
     public static WebDriver getDriver(String browser) {
         if (driver.get() == null) {
             if (browser.equalsIgnoreCase("chrome")) {
