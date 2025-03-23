@@ -1,9 +1,9 @@
-• Язык программирования – Java
+Язык программирования – Java
 
-• Сборка проектов – Maven
+Сборка проектов – Maven
 
-• Фреймворк для тестирования – TestNG
+Фреймворк для тестирования – TestNG
 
-• Репортинг – Allure
+Репортинг – Allure
 
-• Selenium WebDriver
+Selenium WebDriver
