@@ -37,23 +37,4 @@ public class JewelryPage {
     public void navigateToCart() {
         driver.findElement(By.xpath("//*[@class='ok-button']")).click();
     }
-
-
-
-
-    public void verifyPaintingPresent(String paintingName) {
-        List<WebElement> paintings = driver.findElements(By.xpath("//div[@itemprop='name']")).stream()
-                .filter(element -> element.getText().contains(paintingName))
-                .toList();
-        Assert.assertFalse(paintings.isEmpty());
-    }
-
-    public void navigateToPainting(String paintingName) {
-        List<WebElement> paintings = driver.findElements(By.xpath("//div[@itemprop='name']")).stream()
-                .filter(element -> element.getText().contains(paintingName))
-                .toList();
-        if (!paintings.isEmpty()) {
-            paintings.getFirst().click();
-        }
-    }
 }

@@ -22,9 +22,6 @@ public class AllureStepListener implements StepLifecycleListener {
     public AllureStepListener() {
     }
 
-    private static String getTestMethodName(TestResult result) {
-        return result.getName();
-    }
 
     @Attachment(value = "Page Screenshot", type = "image/png")
     public byte[] saveScreenshot(WebDriver driver) {
@@ -37,7 +34,6 @@ public class AllureStepListener implements StepLifecycleListener {
     }
 
 
-    // Реализация методов StepLifecycleListener
     @Override
     public void afterStepStop(StepResult result) {
 

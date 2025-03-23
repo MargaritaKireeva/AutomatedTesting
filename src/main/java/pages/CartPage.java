@@ -12,8 +12,6 @@ import java.util.Objects;
 
 public class CartPage {
     private WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 //    @FindBy(xpath = "//*[@class='heart']")
 //    private WebElement paintingFavorites;
 
