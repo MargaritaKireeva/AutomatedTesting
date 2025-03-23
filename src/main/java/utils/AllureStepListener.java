@@ -44,8 +44,8 @@ public class AllureStepListener implements StepLifecycleListener {
                 byte[] screenshotBytes = saveScreenshot(driver);
                 Allure.addAttachment("Step Screenshot", new ByteArrayInputStream(screenshotBytes));
                 Allure.addAttachment("StepLog", saveTextLog("Step failed: " + result.getName()));
-                System.out.println("Failed step: " + result.getName());
             }
+            System.out.println("Failed step: " + result.getName());
         } else {
             System.out.println("Finished step: " + result.getName());
         }
