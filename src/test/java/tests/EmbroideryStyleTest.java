@@ -10,7 +10,7 @@ import pages.EmbroideryPage;
 
 public class EmbroideryStyleTest extends BaseTest {
     @Test
-    @Description("Test Description: Test checks the operations with the catalog page and painting characteristics")
+    @Description("Test checks the operations with the catalog page and painting characteristics")
     @Parameters("browser")
     public void testVerifyPaintingStyle(String browser) {
         // открываем главную страницу

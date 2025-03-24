@@ -11,7 +11,7 @@ import pages.MainPage;
 public class EmbroideryExistenceTest extends BaseTest {
 
     @Test
-    @Description("Test Description: Test checks the operations with the catalog page and painting existence")
+    @Description("Test checks the operations with the catalog page and painting existence")
     @Parameters("browser")
     public void testVerifyPaintingPresent(String browser) {
         // открываем главную страницу

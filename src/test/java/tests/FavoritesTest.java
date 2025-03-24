@@ -9,7 +9,7 @@ import pages.*;
 
 public class FavoritesTest extends BaseTest {
     @Test
-    @Description("Test Description: Test checks the operations with the catalog and favorites pages")
+    @Description("Test checks the operations with the catalog and favorites pages")
     @Parameters("browser")
     public void testAddToFavorites(String browser) {
         // открываем главную страницу

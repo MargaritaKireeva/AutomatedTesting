@@ -9,7 +9,7 @@ import pages.*;
 
 public class SearchTest extends BaseTest {
     @Test
-    @Description("Test Description: Test checks the operations with the search by name")
+    @Description("Test checks the operations with the search by name (test will fail because the name of the first painting in the search doesn't contain \"жираф\")")
     @Parameters("browser")
     public void testSearchQueryName(String browser) {
         // задаем поисковой запрос
@@ -27,7 +27,7 @@ public class SearchTest extends BaseTest {
     }
 
     @Test
-    @Description("Test Description: Test checks the operations with the search by keywords")
+    @Description("Test checks the operations with the search by keywords")
     @Parameters("browser")
     public void testSearchQueryWithKeywords(String browser) {
         // задаем поисковой запрос
