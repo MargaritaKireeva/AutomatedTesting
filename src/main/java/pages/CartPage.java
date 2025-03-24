@@ -3,17 +3,10 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Listeners;
-import utils.AllureListener;
-
-import java.time.Duration;
 import java.util.Objects;
 
 public class CartPage {
     private WebDriver driver;
-//    @FindBy(xpath = "//*[@class='heart']")
-//    private WebElement paintingFavorites;
 
 
     public CartPage(WebDriver driver) {

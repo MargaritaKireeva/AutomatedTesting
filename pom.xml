@@ -54,14 +54,6 @@
             <version>1.9.23</version>
             <scope>runtime</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.allure/allure-maven-plugin -->
-<!--        <dependency>-->
-<!--            <groupId>ru.yandex.qatools.allure</groupId>-->
-<!--            <artifactId>allure-maven-plugin</artifactId>-->
-<!--            <version>2.6</version>-->
-<!--        </dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
@@ -82,9 +74,6 @@
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>2.11.2</version>
-<!--                <configuration>-->
-<!--                    <resultsDirectory>${basedir}/allure-results</resultsDirectory>-->
-<!--                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -29,27 +29,18 @@ public class BaseTest {
     @Parameters("browser")
     public void setUp(String browser, ITestContext iTestContext) {
         driver = DriverManager.getDriver(browser);
-        iTestContext.setAttribute("WebDriver", driver);
         driver.manage().window().maximize();
         // открытие сайта
         driver.get("https://artnow.ru/");
-
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        Logger allureLogger = (Logger) LoggerFactory.getLogger("io.qameta.allure.AllureLifecycle");
-//        allureLogger.setLevel(OFF);
     }
 
-    public static WebDriver getDriverFromContext(ITestContext iTestContext){
-        return (WebDriver) iTestContext.getAttribute("WebDriver") ;
-    }
+
 
     @AfterMethod(alwaysRun = true)
     public void close() {
         DriverManager.quitDriver();
     }
 
-//    @Attachment(value = "Failure screenshot", type = "image/png")
-//    public static byte[] captureScreenshot(WebDriver driver) {
-//        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//    }
+
 }

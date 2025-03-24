@@ -1,8 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="ArtNow Tests" parallel="tests" thread-count="4">
-<!--    <listeners>-->
-<!--        <listener class-name="utils.AllureListener"/>-->
-<!--    </listeners>-->
     <test name="Chrome Tests">
         <parameter name="browser" value="chrome"/>
         <classes>

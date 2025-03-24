@@ -16,8 +16,6 @@ import java.util.List;
 public class FavoritesPage {
     private WebDriver driver;
 
-//    @FindBy(xpath = "//*[@class='heart']")
-//    private WebElement paintingFavorites;
 
 
     public FavoritesPage(WebDriver driver) {

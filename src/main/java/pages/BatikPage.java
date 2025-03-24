@@ -16,12 +16,6 @@ import java.util.List;
 public class BatikPage {
     private WebDriver driver;
 
-//    @FindBy(xpath = "//*[@class='heart']")
-//    private List<WebElement> paintingHeartList;
-//
-//    @FindBy(xpath = "//*[@alt='Избранное']")
-//    private WebElement favorites;
-
     public BatikPage(WebDriver driver) {
         this.driver = driver;
     }

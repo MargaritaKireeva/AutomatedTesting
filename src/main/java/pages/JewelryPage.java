@@ -3,12 +3,7 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Listeners;
-import utils.AllureListener;
 
-import java.util.List;
 
 public class JewelryPage {
     private WebDriver driver;
